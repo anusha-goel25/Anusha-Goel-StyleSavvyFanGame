@@ -16,18 +16,14 @@ public class StyleSavvy extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-
     void makeOpeningPanel() {
-        
-        // Making a panel(basic attributes and customization)
-        JPanel panel = new JPanel();
+        JPanel panel = ScreenContainer.screenOriginal;
         panel.setLayout(null);
         panel.setPreferredSize(new Dimension(1300, 800));
         panel.setBackground(new Color(255, 217, 231));
 
         // making both buttons
         Font buttonFont = new Font("Serif", Font.PLAIN, 30);
-
         JButton button1 = new JButton("Cute!");
         button1.setBounds(150, 500, 400, 200);
         button1.setFont(buttonFont);

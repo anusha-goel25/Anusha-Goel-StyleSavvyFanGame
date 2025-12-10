@@ -24,7 +24,7 @@ public class ScreenContainer {
     static JPanel screenAltMakeup = new JPanel();
     static JPanel screenAltHeavyMakeup = new JPanel();
     static JPanel screenAltLightMakeup = new JPanel();
-
+    
     static Screen Original = new Screen(screenOriginal);
 
     //this is taken from the morsecode activity and tweaked a bit(made setup public so that I can call it in my main file)
@@ -32,7 +32,7 @@ public class ScreenContainer {
         if (Screen.isSetup) return;
         Screen.isSetup = true;
 
-        //cute path
+        //cute path (dress route)
         Original.left = new Screen(screenCute);
         Original.left.left = new Screen(screenCuteTop);
         Original.left.right = new Screen(screenCuteDress);
@@ -42,6 +42,8 @@ public class ScreenContainer {
         Original.left.right.right = new Screen(screenCuteJewelry);
         Original.left.right.right.left = new Screen(screenCuteJewelryEarrings);
         Original.left.right.right.right = new Screen(screenCuteJewelryNecklace);
+
+        //cute path (shirt route)
         Original.left.left.left = new Screen(screenCuteJeans);
         Original.left.left.left.left = new Screen(screenCuteHair);
         Original.left.left.left.left.left = new Screen(screenCuteHairclip);
@@ -57,7 +59,7 @@ public class ScreenContainer {
         Original.left.left.right.right.left = new Screen(screenCuteJewelryEarrings);
         Original.left.left.right.right.right = new Screen(screenCuteJewelryNecklace);
 
-        //alt path
+        //alt path(dress route)
         Original.right = new Screen(screenAlt);
         Original.right.left = new Screen(screenAltTop);
         Original.right.right = new Screen(screenAltDress);
@@ -67,6 +69,8 @@ public class ScreenContainer {
         Original.right.right.right = new Screen(screenAltMakeup);
         Original.right.right.right.left = new Screen(screenAltHeavyMakeup);
         Original.right.right.right.right = new Screen(screenAltLightMakeup);
+
+        //alt path(shirt route)
         Original.right.left.left = new Screen(screenAltBottoms);
         Original.right.left.left.left = new Screen(screenAltHair);
         Original.right.left.left.left.left = new Screen(screenAltBoldHair);
@@ -93,6 +97,8 @@ public class ScreenContainer {
 
         Screen(JPanel panel) {
             this.panel = panel;
+
+            //start is always null because it's not initialized so this will make the starting screen the starting screen I think
             if (start == null){
                 start = this;
             }
