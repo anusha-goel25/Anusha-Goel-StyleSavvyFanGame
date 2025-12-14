@@ -16,3 +16,13 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## Credits 
+
+https://www.geeksforgeeks.org/java/java-awt-tutorial/ 
+- I got basically all of my basic information about java swing from this website and it explains all the basics 
+- contains: the different variables included in aws, methods you can use on them, information about how the structure works overall
+
+
+
+

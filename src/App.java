@@ -2,6 +2,5 @@
 public class App {
     public static void main(String[] args) {
         ScreenContainer.setup();
-        new StyleSavvy();
     }
 }
