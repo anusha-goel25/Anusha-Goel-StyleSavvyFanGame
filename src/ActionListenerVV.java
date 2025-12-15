@@ -2,13 +2,15 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class ActionListenerVV implements ActionListener {
-    String choice;
+    String chosen;
 
+    //setting the inputted choice(right or left) to the field chosen so that it can
+    //be used in actionPerformed/put in getnextscreen
     public ActionListenerVV(String choice) {
-        this.choice = choice;
+        this.chosen = choice;
     }
 
     public void actionPerformed(ActionEvent clicked) {
-        ScreenContainer.getNextScreen(choice);
+        ScreenContainer.getNextScreen(chosen);
     }
 }
