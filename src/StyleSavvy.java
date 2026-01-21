@@ -174,7 +174,7 @@ public class StyleSavvy extends JFrame {
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteDressHairclip) {
                 leftButton.setText("Nice Job!");
                 rightButton.setText("Great Look!");
-                JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteDressClipClip.png")));
+                JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteDressClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
 
