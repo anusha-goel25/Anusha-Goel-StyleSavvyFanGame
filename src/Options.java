@@ -11,13 +11,13 @@ public class Options {
        2. I looked at this forum: https://stackoverflow.com/questions/19697996/adding-the-same-components-to-multiple-panels 
        the person's problem was a little different but they were also talking about instances so that made me think of methods
     */
-    public static JButton Button1Maker() {
+    public static JButton Button1Maker() throws Exception {
         JButton left = new JButton();
         left.addActionListener(new ActionListenerVV("button1"));
         return left;
     }
 
-    public static JButton Button2Maker() {
+    public static JButton Button2Maker() throws Exception {
         JButton right = new JButton();
         right.addActionListener(new ActionListenerVV("button2"));
         return right;

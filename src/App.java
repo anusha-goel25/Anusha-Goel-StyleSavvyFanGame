@@ -1,7 +1,9 @@
 
 public class App {
-    static FileSave result = new FileSave();
-    public static void main(String[] args) {
+    public static FileSave result;
+
+    public static void main(String[] args) throws Exception {
+        result = new FileSave();
         ScreenContainer.setup();
     }
 }

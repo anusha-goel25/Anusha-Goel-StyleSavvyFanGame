@@ -111,7 +111,7 @@ public class ScreenContainer {
 
     // this is taken from the morsecode activity and tweaked a bit(made setup public
     // so that I can call it in my main file)
-    public static void setup() {
+    public static void setup() throws Exception {
         if (Screen.isSetup)
             return;
         Screen.isSetup = true;
