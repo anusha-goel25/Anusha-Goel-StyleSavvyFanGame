@@ -6,12 +6,12 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class FileSave {
-    String filename = "Results.csv";
-    HashMap<String, String> results = new HashMap<>();
+    static String filename = "Results.csv";
+    static HashMap<String, String> results = new HashMap<>();
 
     // Constructor: loads results as a hash map from filename
     FileSave(String filename) throws IOException {
-        this.filename = filename;
+        FileSave.filename = filename;
         loadResults();
     }
 
@@ -20,7 +20,7 @@ public class FileSave {
         loadResults();
     }
 
-    public HashMap<String, String> getResults() {
+    public static HashMap<String, String> getResults() {
         return results;
     }
 
@@ -47,18 +47,25 @@ public class FileSave {
 
     // update 1 key: value in results
     // then writes to file
-    public void updateResult(String key, String value) throws Exception {
+    public static void updateResult(String key, String value) throws Exception {
         /* YOUR CODE HERE: Change this to actually update the results hashmap */
-        results.put("path","result");
+        results.put(key,value);
         writeResults();
     }
 
     // write results the hashmap to filename
-    private void writeResults() throws IOException {
+    private static void writeResults() throws IOException {
         FileWriter fileWriter = new FileWriter(filename);
         for (String name : results.keySet()) {
             fileWriter.write(name + "," + results.get(name) + "\n");
         }
         fileWriter.close();
     }
+    
+    public static void addToResult(String k) throws Exception{
+        int newIntValue;
+        newIntValue = Integer.parseInt(getResults().get(k)) + 1;
+        updateResult(k, String.valueOf(newIntValue));
+    }
 }
+

@@ -11,6 +11,11 @@ public class ActionListenerVV implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent clicked) {
-        ScreenContainer.getNextScreen(chosen);
+        // the try and catch stuff was just a quick fix thing that VSCODE gave me to make it work 
+        try {
+            ScreenContainer.getNextScreen(chosen);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

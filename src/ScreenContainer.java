@@ -193,11 +193,61 @@ public class ScreenContainer {
 
     }
 
-    public static void getNextScreen(String choice) {
+    public static void getNextScreen(String choice) throws Exception {
         if (choice == "button1") {
             Current = Current.left;
         } else if (choice == "button2") {
             Current = Current.right;
+        }
+
+        if (Current.panel == ScreenContainer.screenCuteSkirtHairclip) {
+            FileSave.addToResult("CuteSkirtHairclipPath");
+        } else if (Current.panel == ScreenContainer.screenCuteSkirtHairband) {
+            FileSave.addToResult("CuteSkirtHairbandPath");
+        } else if (Current.panel == ScreenContainer.screenCuteSkirtEarrings) {
+            FileSave.addToResult("CuteSkirtEarringsPath");
+        } else if (Current.panel == ScreenContainer.screenCuteSkirtNecklace) {
+            FileSave.addToResult("CuteSkirtNecklacePath");
+        } else if (Current.panel == ScreenContainer.screenCutePantsHairclip) {
+            FileSave.addToResult("CutePantsHairclipPath");
+        } else if (Current.panel == ScreenContainer.screenCutePantsHairband) {
+            FileSave.addToResult("CutePantsHairbandPath");
+        } else if (Current.panel == ScreenContainer.screenCutePantsEarrings) {
+            FileSave.addToResult("CutePantsEarringsPath");
+        } else if (Current.panel == ScreenContainer.screenCutePantsNecklace) {
+            FileSave.addToResult("CutePantsNecklacePath");
+        } else if (Current.panel == ScreenContainer.screenCuteDressHairclip) {
+            FileSave.addToResult("CuteDressHairclipPath");
+        } else if (Current.panel == ScreenContainer.screenCuteDressHairband) {
+            FileSave.addToResult("CuteDressHairbandPath");
+        } else if (Current.panel == ScreenContainer.screenCuteDressEarrings) {
+            FileSave.addToResult("CuteDressEarringsPath");
+        } else if (Current.panel == ScreenContainer.screenCuteDressNecklace) {
+            FileSave.addToResult("CuteDressNecklacePath");
+        } else if (Current.panel == ScreenContainer.screenAltSkirtHairclip) {
+            FileSave.addToResult("AltSkirtHairclipPath");
+        } else if (Current.panel == ScreenContainer.screenAltSkirtHairband) {
+            FileSave.addToResult("AltSkirtHairbandPath");
+        } else if (Current.panel == ScreenContainer.screenAltSkirtEarrings) {
+            FileSave.addToResult("AltSkirtEarringsPath");
+        } else if (Current.panel == ScreenContainer.screenAltSkirtNecklace) {
+            FileSave.addToResult("AltSkirtNecklacePath");
+        } else if (Current.panel == ScreenContainer.screenAltPantsHairclip) {
+            FileSave.addToResult("AltPantsHairclipPath");
+        } else if (Current.panel == ScreenContainer.screenAltPantsHairband) {
+            FileSave.addToResult("AltPantsHairbandPath");
+        } else if (Current.panel == ScreenContainer.screenAltPantsEarrings) {
+            FileSave.addToResult("AltPantsEarringsPath");
+        } else if (Current.panel == ScreenContainer.screenAltPantsNecklace) {
+            FileSave.addToResult("AltPantsNecklacePath");
+        } else if (Current.panel == ScreenContainer.screenAltDressHairclip) {
+            FileSave.addToResult("AltDressHairclipPath");
+        } else if (Current.panel == ScreenContainer.screenAltDressHairband) {
+            FileSave.addToResult("AltDressHairbandPath");
+        } else if (Current.panel == ScreenContainer.screenAltDressEarrings) {
+            FileSave.addToResult("AltDressEarringsPath");
+        } else if (Current.panel == ScreenContainer.screenAltDressNecklace) {
+            FileSave.addToResult("AltDressNecklacePath");
         }
         styleSavvy.setScreen(Current.panel);
     }

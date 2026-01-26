@@ -12,7 +12,7 @@ public class StyleSavvy extends JFrame {
         super("Style Savvy");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Font buttonFont = new Font("Serif", Font.PLAIN, 30);
-        
+
         // setting up all the panels
         for (int i = 0; i < ScreenContainer.allPanels.length; i++) {
             ScreenContainer.allPanels[i].setLayout(null);
@@ -30,7 +30,7 @@ public class StyleSavvy extends JFrame {
                 leftButton.setText("Cute!");
                 rightButton.setText("Alt!");
                 JLabel opening = new JLabel("Hello! Can you help me choose a new look?");
-                opening.setBounds(800,100,300,100);
+                opening.setBounds(800, 100, 300, 100);
                 ScreenContainer.allPanels[i].add(opening);
                 JLabel pic = new JLabel((new ImageIcon("resources/base.png")));
                 pic.setBounds(400, 0, 500, 600);
@@ -43,10 +43,7 @@ public class StyleSavvy extends JFrame {
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
 
-
-
-
-                } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCute) {
+            } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCute) {
                 leftButton.setText("Top!");
                 rightButton.setText("Dress!");
                 JLabel pic = new JLabel((new ImageIcon("resources/base.png")));
@@ -79,7 +76,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopSkirtClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteSkirtHairclipPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteSkirtHairband) {
                 leftButton.setText("Nice Job!");
@@ -87,7 +83,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopSkirtBand.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteSkirtHairbandPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteSkirtJewelry) {
                 leftButton.setText("Earrings!");
@@ -102,7 +97,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopSkirtEarrings.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteSkirtEarringsPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteSkirtNecklace) {
                 leftButton.setText("Nice Job!");
@@ -110,7 +104,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopSkirtNecklace.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteSkirtNecklacePath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCutePants) {
                 leftButton.setText("Hair Accessory!");
@@ -132,7 +125,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopPantsClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CutePantsHairclipPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCutePantsHairband) {
                 leftButton.setText("Nice Job!");
@@ -140,7 +132,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopPantsBand.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CutePantsHairbandPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCutePantsJewelry) {
                 leftButton.setText("Earrings!");
@@ -155,7 +146,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopPantsEarrings.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CutePantsEarringsPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCutePantsNecklace) {
                 leftButton.setText("Nice Job!");
@@ -163,7 +153,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteTopPantsNecklace.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CutePantsNecklacePath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteDress) {
                 leftButton.setText("Hair Accessory!");
@@ -185,7 +174,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteDressClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteDressHairclipPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteDressHairband) {
                 leftButton.setText("Nice Job!");
@@ -193,7 +181,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteDressBand.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteDressHairbandPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteDressJewelry) {
                 leftButton.setText("Earrings!");
@@ -208,7 +195,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteDressEarrings.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteDressEarringsPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenCuteDressNecklace) {
                 leftButton.setText("Nice Job!");
@@ -216,9 +202,8 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/cute/CuteDressNecklace.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("CuteDressNecklacePath","1");
 
-            //alt path
+                // alt path
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAlt) {
                 leftButton.setText("Top!");
                 rightButton.setText("Dress!");
@@ -232,6 +217,7 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/top.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
+
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltSkirt) {
                 leftButton.setText("Hair Accessory!");
                 rightButton.setText("Jewelry!");
@@ -252,7 +238,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/skirtClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltSkirtHairclipPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltSkirtHairband) {
                 leftButton.setText("Nice Job!");
@@ -260,7 +245,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/skirtBand.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltSkirtHairbandPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltSkirtJewelry) {
                 leftButton.setText("Earrings!");
@@ -275,7 +259,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/skirtEarrings.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltSkirtEarringsPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltSkirtNecklace) {
                 leftButton.setText("Nice Job!");
@@ -283,7 +266,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/skirtNecklace.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltSkirtNecklacePath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltBottoms) {
                 leftButton.setText("Hair Accessory!");
@@ -305,7 +287,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/jeansClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltPantsHairclipPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltPantsHairband) {
                 leftButton.setText("Nice Job!");
@@ -313,7 +294,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/jeansBand.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltPantsHairbandPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltPantsJewelry) {
                 leftButton.setText("Earrings!");
@@ -328,7 +308,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/jeansEarrings.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltPantsEarringsPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltPantsNecklace) {
                 leftButton.setText("Nice Job!");
@@ -336,7 +315,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/jeansNecklace.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltPantsNecklacePath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltDress) {
                 leftButton.setText("Hair Accessory!");
@@ -358,7 +336,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/dressClip.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltDressHairclipPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltDressHairband) {
                 leftButton.setText("Nice Job!");
@@ -366,7 +343,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/dressBand.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltDressHairbandPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltDressJewelry) {
                 leftButton.setText("Earrings!");
@@ -381,7 +357,6 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/dressEarrings.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltDressEarringsPath","1");
 
             } else if (ScreenContainer.allPanels[i] == ScreenContainer.screenAltDressNecklace) {
                 leftButton.setText("Nice Job!");
@@ -389,14 +364,14 @@ public class StyleSavvy extends JFrame {
                 JLabel pic = new JLabel((new ImageIcon("resources/alt/dressNecklace.png")));
                 pic.setBounds(400, 0, 500, 600);
                 ScreenContainer.allPanels[i].add(pic);
-                App.result.updateResult("AltDressNecklacePath","1");
+
             }
 
             ScreenContainer.allPanels[i].add(leftButton);
             ScreenContainer.allPanels[i].add(rightButton);
         }
 
-    add(ScreenContainer.screenOriginal);
+        add(ScreenContainer.screenOriginal);
         pack();
         setVisible(true);
 
